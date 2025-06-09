@@ -263,7 +263,7 @@ const justTitles = function () {
 */
 
 const justInThisMillenium = function () {
-  movies.filter((movie) => {
+  return movies.filter((movie) => {
     if (parseInt(movie.Year) >= 2000) {
       return true;
     } else {
@@ -283,6 +283,8 @@ const findAllAges = function () {
     return acc + parseInt(el.Year);
   }, 0);
 };
+
+console.log(findAllAges());
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
